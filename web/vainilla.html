@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vainilla</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <link rel="stylesheet" href="./CSS/">
+            <p>¡PRUEBA NUESTRO NUEVO HELADO DE FRESA! ESTÁ TANDO EN MENUDEO COMO MAYOREO</p>
+            <a href="fresa.html"><img class="anuncio_menudeo" src="IMG/fresa.jpg"></a><a href="fresa_ma.html"><img src="IMG/fresa_caja.jpg"></a>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="carrito.html">CARRITO</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <img src="IMG/menudeo.jpg">
+        <ul>
+            <li type="disc">Gramos: 13 grs</li>
+            <li type="disc">
+                <form action="">
+                    <label for="cantidad">Canidad requerida</label>
+                    <input type="number" placeholder="Cantidad de helados" min="1" max="9" id="cantidad" name="cantidad">
+                </form>
+            </li>
+            <li type="disc">Tamaño: 1 bola</li>
+            <li type="disc">
+                <select name="tipo" id="">
+                    <option value="">Cono</option>
+                    <option value="">Vaso</option>
+                </select>
+            </li>
+            <li type="disc">Precio: $13</li>
+        </ul>
+    </div>
+    <input type="submit" value="Agregar al carrito">
+</body>
+</html>
