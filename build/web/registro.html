@@ -9,7 +9,7 @@
 <body>
     <h1>REGISTRO</h1>
     <a href="admin.html"><h2>SI ERES ADMINISTRADOR PULSA AQUÍ</h2></a>
-    <form action="">
+    <form action="registro.jsp" method="post">
         <label for="nombre">Ingresa tu Nombre</label>
         <input type="text" name="nombre" id="nombre" placeholder="Tu NOMBRE aquí">
         <label for="appat">Ingresa tu Apellido Paterno</label>
@@ -17,16 +17,26 @@
         <label for="apmat">Ingresa tu Apellido Materno</label>
         <input type="text" name="apmat" id="apmat" placeholder="Apellido MATERNO">
         <label for="edad">Ingresa tu Edad</label>
-        <input type="text" name="edad" id="edad" placeholder="Tu EDAD aquí" maxlenght="3">
-        <label for="fn">Ingresa tu FECHA DE NACIMIENTO</label>
-        <input type="date" name="fn" id="fn" min="1921-01-01" max="2021-01-01">
-        <label for="domicilio">Ingresa tu DOMICILIO</label>
-        <input type="text" name="domicilio" id="domicilio" placeholder="DOMICILIO">
+        <input type="number" name="edad" id="edad" placeholder="Tu EDAD aquí" max="100">
+        <label for="dia_nac">Ingresa tu DÍA DE NACIMIENTO</label>
+        <input type="number" name="dia_nac" id="dia_nac" max="31" placeholder="DÍA">
+        <label for="mes_nac">Ingresa tu MES DE NACIMIENTO</label>
+        <input type="number" name="mes_nac" id="mes_nac" max="12" placeholder="MES">
+        <label for="dia_nac">Ingresa tu AÑO DE NACIMIENTO</label>
+        <input type="number" name="ano_nac" id="ano_nac" min="1920" max="2021" placeholder="AÑO">
+        <label for="calle">Ingresa tu CALLE</label>
+        <input type="text" name="calle" id="calle" placeholder="CALLE">
+        <label for="alcaldia">Ingresa tu ALCALDÍA</label>
+        <input type="text" name="alcaldia" id="alcaldia" placeholder="ALCALDÍA">
+        <label for="num_casa">Ingresa tu NO. DE CASA</label>
+        <input type="text" name="num_casa" id="num_casa" placeholder="NO. DE CASA">
+        <label for="interior">Ingresa tu INTERIOR (Si es que tiene)</label>
+        <input type="text" name="interior" id="interior" placeholder="INTERIOR">
         <label for="tp">Ingresa tu TELÉFONO PARTICULAR</label>
-        <input type="text" name="tp" id="tp" minlength="0" maxlength="10" placeholder="TEL. FIJO">
+        <input type="text" name="tp" id="tp" placeholder="TEL. FIJO">
         <label for="tc">Ingresa tu número de celular</label>
         <input type="text" name="tc" id="tc" value="55" maxlength="10">
-        <input type="submit">
+        <input type="submit" value="Registrar Usuarios">
     </form>
 </body>
 </html>
